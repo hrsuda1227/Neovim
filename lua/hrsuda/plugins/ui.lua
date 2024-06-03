@@ -125,16 +125,6 @@ return {
     },
   },
   {
-    "ThePrimeagen/harpoon",
-    branch = "harpoon2",
-    dependencies = { "nvim-lua/plenary.nvim" },
-  },
-  -- {
-  --   "m4xshen/hardtime.nvim",
-  --   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-  --   opts = {},
-  -- },
-  {
     "tris203/precognition.nvim",
     config = {
       -- startVisible = true,
