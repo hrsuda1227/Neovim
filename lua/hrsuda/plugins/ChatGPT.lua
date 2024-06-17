@@ -1,11 +1,12 @@
 return {
   {
-    -- -- "jackMort/ChatGPT.nvim",
-    -- "dreamsofcode-io/ChatGPT.nvim",
+    -- "jackMort/ChatGPT.nvim",
+    -- -- "dreamsofcode-io/ChatGPT.nvim",
     -- event = "VeryLazy",
     -- dependencies = {
     --   "MunifTanjim/nui.nvim",
     --   "nvim-lua/plenary.nvim",
+    --   "folke/trouble.nvim",
     --   "nvim-telescope/telescope.nvim",
     -- },
     -- config = function()

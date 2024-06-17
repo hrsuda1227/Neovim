@@ -1,10 +1,3 @@
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "oil",
-  callback = function()
-    vim.opt_local.colorcolumn = ""
-  end,
-})
-
 return {
   {
     "stevearc/oil.nvim",
@@ -31,6 +24,19 @@ return {
           ["g."] = "actions.toggle_hidden",
         },
         use_default_keymaps = false,
+        default_file_explorer = true,
+        delete_to_trash = true,
+        skip_confirm_for_simple_edits = true,
+        view_options = {
+          show_hidden = true,
+          natural_order = true,
+          is_always_hidden = function(name, _)
+            return name == ".." or name == ".git"
+          end,
+          win_option = {
+            wrap = true,
+          },
+        },
       })
     end,
   },
